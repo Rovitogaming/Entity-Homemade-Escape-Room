@@ -30,7 +30,7 @@ void setup() {
   pinMode(2, INPUT);
   pinMode(4, OUTPUT);
   digitalWrite(4, HIGH);
-  WiFi.begin("TAZMANHOME","F68ACRogers");         //SSID,PASSWORD 
+  WiFi.begin("WIFI-SSID-REDACTED","WIFI-PASSWORD-REDACTED");         //SSID,PASSWORD 
   while(WiFi.status()!=WL_CONNECTED){
     delay(500);
     Serial.print(".");
@@ -43,7 +43,7 @@ void setup() {
 
 
 
-const char* mqtt_server="192.168.86.27";
+const char* mqtt_server="MQTT-SERVER-IP-REDACTED"; //MQTT Server IP Address
 WiFiClient espclient;
 PubSubClient client(mqtt_server,1883,callback,espclient);
 
