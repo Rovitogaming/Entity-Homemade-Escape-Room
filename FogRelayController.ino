@@ -20,7 +20,7 @@ else if(payload[0]==50)digitalWrite(2,LOW);//ASCII VALUE OF '2' IS 50
 Serial.println();
 }
 
-const char* mqtt_server="192.168.86.27";
+const char* mqtt_server="MQTT-SERVER-IP-REDACTED";
 WiFiClient espclient;
 PubSubClient client(mqtt_server,1883,callback,espclient);
 
@@ -30,7 +30,7 @@ void setup() {
    pinMode(2,OUTPUT);
   Serial.begin(115200);
   Serial.print("connecting");
-  WiFi.begin("TAZMANHOME","F68ACRogers");         //SSID,PASSWORD 
+  WiFi.begin("WIFI-SSID-REDACTED","WIFI-PASS-REDACTED");         //SSID,PASSWORD 
   while(WiFi.status()!=WL_CONNECTED){
     delay(500);
     Serial.print(".");
