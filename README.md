@@ -4,4 +4,6 @@ A homemade escape room using arduino, esp8266, mqtt server, and node red server
 Hello This is a Repository for all the code used in my sci-fi themed escape room project. im somewhat new to arduino and Node-red so this
 was a great and fun learning experience for me. I mainly just upload my code here as a backup but feel free to use it however you like!
 
+You can find the code in the branches: microcontrollers, and node red
+
 Thanks for checking it out!
